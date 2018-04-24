@@ -13,8 +13,8 @@ func init() {
 	logger = logrus.New()
 }
 
-// Return our logger instance
-func GetInstanse() *logrus.Logger {
+// GetInstance return our logger instance
+func GetInstance() *logrus.Logger {
 	return logger
 }
 
