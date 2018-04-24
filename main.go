@@ -13,7 +13,7 @@ func init() {
 }
 
 
-func setOut(writer io.Writer){
+func SetOut(writer io.Writer){
 	logger.Out = writer
 }
 
