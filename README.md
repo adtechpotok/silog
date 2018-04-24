@@ -8,4 +8,4 @@
 
 Single instance log based on logrus
 
-![Image of sidog](https://memegenerator.net/img/instances/80538986/si.jpg){:height="10%" width="10%"}
+![Image of sidog](https://memegenerator.net/img/instances/80538986/si.jpg =20x100)
