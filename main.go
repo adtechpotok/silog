@@ -1,4 +1,4 @@
-package logrus_singleton
+package slogrus
 
 import (
 	"github.com/sirupsen/logrus"
