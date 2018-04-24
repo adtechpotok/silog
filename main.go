@@ -9,7 +9,7 @@ import (
 var logger *logrus.Logger
 
 func init() {
-	logger = new(logrus.Logger)
+	logger = logrus.New()
 }
 
 
