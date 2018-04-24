@@ -1,4 +1,4 @@
-package slogrus
+package silog
 
 import (
 	"github.com/sirupsen/logrus"
