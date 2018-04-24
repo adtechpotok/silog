@@ -1,1 +1,1 @@
-# logrus-singleton
+# silog
