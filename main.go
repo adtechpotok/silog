@@ -12,6 +12,9 @@ func init() {
 	logger = logrus.New()
 }
 
+func GetInstanse() *logrus.Logger{
+	return logger
+}
 
 func SetOut(writer io.Writer){
 	logger.Out = writer
