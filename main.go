@@ -2,6 +2,7 @@ package silog
 
 import (
 	"github.com/sirupsen/logrus"
+	"io"
 )
 
 // Logrus instance
@@ -9,6 +10,11 @@ var logger *logrus.Logger
 
 func init() {
 	logger = new(logrus.Logger)
+}
+
+
+func setOut(writer io.Writer){
+	logger.Out = writer
 }
 
 // Adds a field to the log entry, note that it doesn't log until you call
