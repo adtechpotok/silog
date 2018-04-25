@@ -1,5 +1,7 @@
 package silog
 
+import "github.com/sirupsen/logrus"
+
 // MiniLogger is the interface used by Go's standard library's log package.
 type MiniLogger interface {
 	Fatal(args ...interface{})
@@ -35,9 +37,5 @@ type StandardLogger interface {
 // AdvancedLogger is the interface used by logrus
 type AdvancedLogger interface {
 	StandardLogger
-
-	Debug(args ...interface{})
-	Debugf(format string, args ...interface{})
-	Debugln(args ...interface{})
-
+	WithField(key string, value interface{}) *logrus.Entry
 }
