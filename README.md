@@ -6,6 +6,6 @@
 
 # Silog
 
-Single instance log based on logrus
+Single Interface log
 
 <img src="https://memegenerator.net/img/instances/80538986/si.jpg" alt="Image of sidog" width="20%" height="20%">
