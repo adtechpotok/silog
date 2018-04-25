@@ -1,11 +1,7 @@
 package silog
 
-import "github.com/sirupsen/logrus"
-
-type Fields map[string]interface{}
-
-// MiniLogger is the interface used by Go's standard library's log package.
-type MiniLogger interface {
+// BaseLogger is the interface used by Go's standard library's log package.
+type BaseLogger interface {
 	Fatal(args ...interface{})
 	Fatalf(format string, args ...interface{})
 	Fatalln(args ...interface{})
@@ -19,9 +15,9 @@ type MiniLogger interface {
 	Println(args ...interface{})
 }
 
-// StandardLogger is the interface used by us
-type StandardLogger interface {
-	MiniLogger
+// Logger is the interface used by us
+type Logger interface {
+	BaseLogger
 
 	Error(args ...interface{})
 	Errorf(format string, args ...interface{})
@@ -34,11 +30,4 @@ type StandardLogger interface {
 	Warn(args ...interface{})
 	Warnf(format string, args ...interface{})
 	Warnln(args ...interface{})
-}
-
-// AdvancedLogger is the interface used by logrus
-type AdvancedLogger interface {
-	StandardLogger
-	WithField(key string, value interface{}) *logrus.Entry
-	WithFields(fields Fields) *logrus.Entry
 }
