@@ -30,4 +30,8 @@ type Logger interface {
 	Warn(args ...interface{})
 	Warnf(format string, args ...interface{})
 	Warnln(args ...interface{})
+
+	Debug(args ...interface{})
+	Debugf(format string, args ...interface{})
+	Debugln(args ...interface{})
 }
